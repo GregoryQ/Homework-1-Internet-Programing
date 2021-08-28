@@ -122,7 +122,7 @@ a:hover {
  transform: translatex(55%);
 }
 #paragraph:hover{
-  background-image: linear-gradient(180.43deg, rgba(0,0,0,0.60) 0%, rgba(0,0,0,0.80) 100%), url("/Homework-1-Internet-Programing/images/code-backdrop.jpg");
+  background-image: linear-gradient(180.43deg, rgba(0,0,0,0.60) 0%, rgba(0,0,0,0.80) 100%), url("/images/code-backdrop.jpg");
   color:white;
   opacity: 0.5;
   padding: 50px;
