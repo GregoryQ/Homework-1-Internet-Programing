@@ -1,0 +1,106 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #24272e;
+  color: white;
+}
+.Questions {
+  font-family: "Times New Roman", Times, serif;
+  /* background-color:grey; */
+  background-color: #24272e;
+
+  /* display: none; */
+}
+
+#xx {
+  display: block;
+}
+#Counter {
+  /* display: none; */
+}
+
+.score-board {
+  margin: 20px auto;
+  border: 3px solid white;
+  border-radius: 4px;
+  text-align: center;
+  width: 200px;
+  color: white;
+  font-size: 46px;
+  font-family: Asap, sans-serif;
+  padding: 15px 20px;
+  position: relative;
+}
+
+.badge {
+  background: red;
+  font-size: 14px;
+  padding: 2px 10px;
+  font-family: Asap, sans-serif;
+}
+
+#Correct_label {
+  position: absolute;
+  top: 30px;
+  left: -20px;
+}
+
+#Incorrect_label {
+  position: absolute;
+  top: 30px;
+  right: -30px;
+}
+.Results {
+  text-align: center;
+  font-family: Asap, sans-serif;
+  font-size: 40px;
+  color: white;
+}
+
+.Results > p {
+  text-align: center;
+  font-family: Asap, sans-serif;
+}
+
+.Selections button {
+  /* background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    padding: 50px; */
+
+  background-color: red;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  opacity: 0.6;
+  transition: 0.3s;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.Selections button:hover {
+  opacity: 1;
+}
+
+#Retry {
+  margin-left: 44%;
+  margin-right: 10px;
+}
+
+#Header_score {
+  color: white;
+  font-size: 50px;
+}

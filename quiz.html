@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Pre-Quiz</title>
+    <link rel="stylesheet" href="Quiz_style.css" />
+  </head>
+  <body>
+    <h1>Pre-Quiz</h1>
+    <p>
+      Welcome to the Javascript pre-quiz. Please answer the following questions
+      to the best of your abilities
+    </p>
+
+    <div class="Counter">
+      <!-- <h1 id="Header_score">Results:</h1> -->
+      <div class="score-board">
+        <div id="Correct_label" class="badge">Correct</div>
+        <div id="Incorrect_label" class="badge">Incorrect</div>
+        <span id="User_Score">0</span>:<span id="Comp_Score">0</span>
+      </div>
+    </div>
+
+    <div class="Questions">
+      <form name="Quiz">
+        <!------------------------------------------------------------------------>
+        <h1>1. What is javascript?</h1>
+        <div class="container_Options">
+          <input
+            type="radio"
+            name="Q1"
+            value="an object-oriented computer programming language commonly used to create interactive effects within web browsers."
+          />
+          <label for="Q1"
+            >an object-oriented computer programming language commonly used to
+            create interactive effects within web browsers.</label
+          >
+          <br />
+          <input
+            type="radio"
+            name="Q1"
+            value="a low level programming language"
+          />
+          <label for="Q1">a low level programming language</label>
+          <br />
+          <input type="radio" name="Q1" value="machine language" />
+          <label for="Q1">machine language</label>
+          <br />
+          <input type="radio" name="Q1" value="nothing" />
+          <label for="Q1">nothing</label>
+          <br />
+        </div>
+        <br />
+        <!------------------------------------------------------------------------>
+        <h1>2. when was javascript made?</h1>
+        <div class="container_Options">
+          <input type="radio" name="Q2" value="1995" />
+          <label for="Q2">1995</label>
+          <br />
+          <input type="radio" name="Q2" value="1996" />
+          <label for="Q2">1996</label>
+          <br />
+          <input type="radio" name="Q2" value="1795" />
+          <label for="Q2">1795</label>
+          <br />
+          <input type="radio" name="Q2" value="2005" />
+          <label for="Q2">2005</label>
+          <br />
+        </div>
+        <!------------------------------------------------------------------------>
+        <h1>3. Which is a variable types in javascript?</h1>
+        <div class="container_Options">
+          <input type="radio" name="Q3" value="bit" />
+          <label for="Q3">bit</label>
+          <br />
+          <input type="radio" name="Q3" value="word" />
+          <label for="Q3">word</label>
+          <br />
+          <input type="radio" name="Q3" value="variable" />
+          <label for="Q3">variable</label>
+          <br />
+          <input type="radio" name="Q3" value="string" />
+          <label for="Q3">string</label>
+          <br />
+        </div>
+        <!------------------------------------------------------------------------>
+        <h1>4. Inside which HTML element do we put the JavaScript??</h1>
+        <div class="container_Options">
+          <input type="radio" name="Q4" value="&lt;script&gt;" />
+          <label for="Q4">&lt;script&gt;</label>
+          <br />
+          <input type="radio" name="Q4" value="&lt;javascript&gt;" />
+          <label for="Q4">&lt;javascript&gt;</label>
+          <br />
+          <input type="radio" name="Q4" value="&lt;js&gt;" />
+          <label for="Q4">&lt;js&gt;</label>
+          <br />
+          <input type="radio" name="Q4" value="&lt;scripting&gt;" />
+          <label for="Q4">&lt;scripting&gt;</label>
+          <br />
+        </div>
+        <!------------------------------------------------------------------------>
+        <h1>
+          5.What is the correct JavaScript syntax to change the content of the
+          HTML element below?
+          <br />
+          &lt;p name="demo"&gt;This is a demonstration.&lt;p&gt;
+        </h1>
+        <div class="container_Options">
+          <input
+            type="radio"
+            name="Q5"
+            value="document.getElementbyID('demo').innerHTML='hello World';"
+          />
+          <label for="Q5"
+            >document.getElementbyID("demo").innerHTML="hello World";</label
+          >
+          <br />
+          <input type="radio" name="Q5" value="#demo=hello World" />
+          <label for="Q5">#demo=hello World</label>
+          <br />
+          <input
+            type="radio"
+            name="Q5"
+            value="#demo.innerHTML='hellow world'"
+          />
+          <label for="Q5">#demo.innerHTML="hellow world"</label>
+          <br />
+          <input
+            type="radio"
+            name="Q5"
+            value="document.getElement(p)=hello world"
+          />
+          <label for="Q5">document.getElement(p)=hello world</label>
+          <br />
+        </div>
+        <!------------------------------------------------------------------------>
+        <h1>6. Where is the correct place to insert a JavaScript?</h1>
+        <div class="container_Options">
+          <input type="radio" name="Q6" value="the body section" />
+          <label for="Q6">the body section</label>
+          <br />
+          <input type="radio" name="Q6" value="the head section" />
+          <label for="Q6">the head section</label>
+          <br />
+          <input type="radio" name="Q6" value="both head and body" />
+          <label for="Q6">both head and body</label>
+          <br />
+          <input type="radio" name="Q6" value="the h1 tag" />
+          <label for="Q6">the h1 tag</label>
+          <br />
+        </div>
+        <!------------------------------------------------------------------------>
+        <h1>
+          7. What is the correct syntax for referring to an external script
+          called "xxx.js"?
+        </h1>
+        <div class="container_Options">
+          <input type="radio" name="Q7" value=">NO need to refer to it" />
+          <label for="Q7">NO need to refer to it</label>
+          <br />
+          <input type="radio" name="Q7" value="&lt;script name='xxx.js'&gt" />
+          <label for="Q7">&lt;script name="xxx.js"&gt;</label>
+          <br />
+          <input type="radio" name="Q7" />
+          <label for="Q7">&lt;script href="xxx.js"&gt;</label>
+          <br />
+          <input type="radio" name="Q7" value="&lt;script src='xxx.js'&gt;" />
+          <label for="Q7">&lt;script src="xxx.js"&gt;</label>
+          <br />
+        </div>
+        <!------------------------------------------------------------------------>
+        <h1>8. How do you write "Hello World" in an alert box?</h1>
+        <div class="container_Options">
+          <input type="radio" name="Q8" />
+          <label for="Q8">msg("Hello World")</label>
+          <br />
+          <input type="radio" name="Q8" value="alert('Hello World')" />
+          <label for="Q8">alert("Hello World")</label>
+          <br />
+          <input type="radio" name="Q8" />
+          <label for="Q8">msgBox("Hello World")</label>
+          <br />
+          <input type="radio" name="Q8" />
+          <label for="Q8">alertBox("Hello World")</label>
+          <br />
+        </div>
+        <!------------------------------------------------------------------------>
+        <h1>9. How do you create a function in JavaScript?</h1>
+        <div class="container_Options">
+          <input type="radio" name="Q9" value="function myFunction()" />
+          <label for="Q9">function myFunction()</label>
+          <br />
+          <input type="radio" name="Q9" />
+          <label for="Q9">function:myFunction()</label>
+          <br />
+          <input type="radio" name="Q9" />
+          <label for="Q9">function=myFunction()</label>
+          <br />
+          <input type="radio" name="Q9" />
+          <label for="Q9">function(){}</label>
+          <br />
+        </div>
+        <!------------------------------------------------------------------------>
+        <h1>10. How do you call a function named "myFunction"?</h1>
+        <div class="container_Options">
+          <input type="radio" name="Q10" />
+          <label for="Q10">call myfunction</label>
+          <br />
+          <input type="radio" name="Q10" />
+          <label for="Q10">call function myfunction</label>
+          <br />
+          <input type="radio" name="Q10" />
+          <label for="Q10">myfunc()</label>
+          <br />
+          <input type="radio" name="Q10" value="myFunction()" />
+          <label for="Q10">myFunction()</label>
+        </div>
+      </form>
+    </div>
+    <div class="Selections">
+      <a
+        ><button type="button" id="btn-SUbmit" onclick="submitQuiz()">
+          Submit
+        </button></a
+      >
+      <button id="retry" onclick="retry()">Retry</button>
+      <a href="index.html"><button>cancel</button></a>
+    </div>
+
+    <script src="/quiz.js"></script>
+  </body>
+</html>
