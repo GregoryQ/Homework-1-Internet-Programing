@@ -21,7 +21,7 @@ body {
   align-items: center;
   list-style-type: none;
   margin: 0;
-  padding-left: 60%;
+  padding-left: 50%;
   overflow: hidden;
 }
 
@@ -157,4 +157,27 @@ a:hover {
   position: fixed;
   bottom: 0;
   width: 100%;
+}
+
+.adobe h1{
+  color: white;
+margin-bottom: 10px;
+}
+
+
+.adobe {
+  color: white;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 15px;
+}
+.adobe p{
+  font-size: large;
+  margin-bottom: 20px;
+}
+.adobe img{
+  margin-left: 100px
+}
+
+.adobe canvas{
+  height: 200px;
 }

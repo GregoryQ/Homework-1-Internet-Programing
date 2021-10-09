@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adobe Animations</title>
+    <link id="linkStyle" rel="stylesheet" href="Style.css" />
+
+
+
+    <!--motion tween -->
+    <style>
+        #animation_container {
+          width: 100px;
+          height: 100px;
+        }
+      </style>
+      <script src="https://code.createjs.com/1.0.0/createjs.min.js"></script>
+      <script src="star motion tween.js"></script>
+      <script>
+      var canvas, stage, exportRoot, anim_container, dom_overlay_container, fnStartAnimation;
+      function init() {
+          canvas = document.getElementById("canvas");
+          anim_container = document.getElementById("animation_container");
+          dom_overlay_container = document.getElementById("dom_overlay_container");
+          var comp=AdobeAn.getComposition("D47052C228F86344A04B9ABFEB006297");
+          var lib=comp.getLibrary();
+          var loader = new createjs.LoadQueue(false);
+          loader.addEventListener("fileload", function(evt){handleFileLoad(evt,comp)});
+          loader.addEventListener("complete", function(evt){handleComplete(evt,comp)});
+          var lib=comp.getLibrary();
+          loader.loadManifest(lib.properties.manifest);
+      }
+      function handleFileLoad(evt, comp) {
+          var images=comp.getImages();	
+          if (evt && (evt.item.type == "image")) { images[evt.item.id] = evt.result; }	
+      }
+      function handleComplete(evt,comp) {
+          //This function is always called, irrespective of the content. You can use the variable "stage" after it is created in token create_stage.
+          var lib=comp.getLibrary();
+          var ss=comp.getSpriteSheet();
+          var queue = evt.target;
+          var ssMetadata = lib.ssMetadata;
+          for(i=0; i<ssMetadata.length; i++) {
+              ss[ssMetadata[i].name] = new createjs.SpriteSheet( {"images": [queue.getResult(ssMetadata[i].name)], "frames": ssMetadata[i].frames} )
+          }
+          exportRoot = new lib.starmotiontween();
+          stage = new lib.Stage(canvas);	
+          //Registers the "tick" event listener.
+          fnStartAnimation = function() {
+              stage.addChild(exportRoot);
+              createjs.Ticker.framerate = lib.properties.fps;
+              createjs.Ticker.addEventListener("tick", stage);
+          }	    
+          //Code to support hidpi screens and responsive scaling.
+          AdobeAn.makeResponsive(false,'both',false,1,[canvas,anim_container,dom_overlay_container]);	
+          AdobeAn.compositionLoaded(lib.properties.id);
+          fnStartAnimation();
+      }
+
+    
+      </script>
+    <!-- motion tween -->
+</head>
+
+<body onload="init();" >
+    <div class="toolbar">
+  
+        <h1>Gregory Quiñones</h1>
+     
+        <ul>
+          <li><a href="index.html">About me</a></li>
+          <li><a href="experience.html">Experience</a></li>
+          <li><a href="Certificates.html">Certificates</a></li>
+          <li><a href="quiz.html">Quiz</a></li>
+          <li><a href="Adobe.html">Animations</a></li>
+        </ul>
+    </div>
+
+
+    <div class="adobe">
+    <h1 >Adobe Animations</h1>
+<p>These are some of the animations I created for my CECS3214 homework #3</p>
+<br>
+<br>
+
+<h2>Frame by frame animation</h2>
+<p>This is a frame by frame animation</p>
+<img src="school girl.gif" alt="description of gif" /> 
+
+    <h2>Shape Tween</h2>
+    <p>
+        This is a motion tween with a shape I created using adobe animate and a text box displaying the tittle of the class.
+    </p>
+    <img src="star_shape.gif" alt="description of gif" /> 
+   
+     
+    
+
+<h2>Motion tween</h2>
+<p>This is a motion tween I create that looks like a shooring star</p>
+
+<div id="animation_container" style="background-color:rgba(255, 255, 255, 1.00); width:1793px; height:800px">
+    <canvas id="canvas" width=" 270px" height="159px" style="position: absolute; display: block; background-color:rgba(255, 255, 255, 1.00);width: 100px; height: 200px;"></canvas>
+    <div id="dom_overlay_container" style="pointer-events:none; overflow:hidden; width:1793px; height:800px; position: absolute; left: 0px; top: 0px; display: block;">
+    </div>
+</div>
+
+    </div>
+</body>
+</html>
