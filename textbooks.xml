@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="textbook.xsl" type="text/xsl"?>
+<class>
+    <textbookslist xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="textbook.xsd">
+        <book>
+            <tittle>Operating System Concepts</tittle>
+            <author>
+                <firstname>Abraham</firstname>
+                <lastname>Silberschatz</lastname>
+            </author>
+            <author>
+                <firstname>Peter</firstname>
+                <lastname>Galvin</lastname>
+            </author>
+            <author>
+                <firstname>Greg</firstname>
+                <lastname>Gagne</lastname>
+            </author>
+            <publisher>Jonh Wiley and sons</publisher>
+            <website>https://www.wiley.com/en-us</website>
+            <publication>2012</publication>
+            <ISBN>978-1-118-06333-0</ISBN>
+            <edition>9</edition>
+            <cover>hardcover</cover>
+        </book>
+        <book>
+            <tittle>Computer Organization and Design: The Hardware/Software Interface.</tittle>
+            <author>
+                <firstname>David</firstname>
+                <lastname>Patterson</lastname>
+            </author>
+            <author>
+                <firstname>John</firstname>
+                <lastname>Hennessy,</lastname>
+            </author>
+            <publisher>MorganKaufmann Publishers</publisher>
+            <website>https://www.elsevier.com/books-and-journals/morgan-kaufmann</website>
+            <publication>2013</publication>
+            <ISBN>9783827415950</ISBN>
+            <edition>5</edition>
+            <cover>hardcover</cover>
+        </book>
+    </textbookslist>
+</class>

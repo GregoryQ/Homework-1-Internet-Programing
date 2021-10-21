@@ -21,7 +21,7 @@ body {
   align-items: center;
   list-style-type: none;
   margin: 0;
-  padding-left: 50%;
+  padding-left: 40%;
   overflow: hidden;
 }
 
@@ -180,4 +180,23 @@ margin-bottom: 10px;
 
 .adobe canvas{
   height: 200px;
+}
+
+.Selections button {
+  background-color: red;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  opacity: 0.6;
+  transition: 0.3s;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.Selections button:hover {
+  opacity: 1;
 }
